@@ -19,7 +19,7 @@ export default class Task extends Component {
     return (
       <li className={taskClassName}>
         <button className="delete" onClick={this.deleteThisTask.bind(this)}>
-          &times;
+          Remover
         </button>
 
         <input

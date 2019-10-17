@@ -46,7 +46,7 @@ class App extends Component {
     return (
       <div className="container">
         <header>
-          <h1>Todo List ({this.props.incompleteCount})</h1><h1>Todo List</h1>
+          <h1>Tarefas({this.props.incompleteCount})</h1><h1>Lista de Tarefas com login</h1>
           <label className="hide-completed">
             <input
               type="checkbox"
@@ -54,7 +54,7 @@ class App extends Component {
               checked={this.state.hideCompleted}
               onClick={this.toggleHideCompleted.bind(this)}
             />
-            Hide Completed Tasks
+            Esconder tarefas completadas
           </label>
           <AccountsUIWrapper />
           {this.props.currentUser ?
@@ -62,7 +62,7 @@ class App extends Component {
               <input
                 type="text"
                 ref="textInput"
-                placeholder="Type to add new tasks"
+                placeholder="Digite para adicionar novas tarefas"
               />
             </form> : ''
           }
